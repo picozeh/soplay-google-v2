@@ -1,0 +1,75 @@
+.search__field {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #616161;
+} 
+.search-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3F4244;
+    margin-left: 12px;
+}
+.search-results-itens {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.search-link {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 390px;
+}
+
+.search-box {
+  height: 295px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 390px;
+  display: flex;
+  align-items: flex-end;
+}
+.search-box img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 12px;
+}
+.search-box .search-gradient {
+    height: 75%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(63, 66, 68, 0) 0%, #2D2D2D 78.12%);
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.search-box .search-gradient h3 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: #F6F6F6;
+    margin-bottom: 0px;
+}
+
+.search-box .search-gradient p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #ACACAC;
+}

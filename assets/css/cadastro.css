@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--nx-bgColor);
+}
+
+/*Main Section*/
+#section-Main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+h1.main-title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: center;
+    max-width: 1000px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+/*Header Section*/
+.header-secMain {
+    flex-direction: row;
+    align-items: center;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    min-height: 9rem;
+    justify-content: space-between;
+    background-color: #13181B;
+    z-index: 99;
+}
+
+.header-secMain img {
+    padding: 5px;
+}
+
+.header-logo {
+    width: 15rem;
+    height: auto;
+}
+
+.horizontalMenu {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontalMenu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 23px;
+}
+
+.buttons {
+    margin-left: auto;
+}
+
+#login {
+    width: 13rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    cursor: pointer;
+    margin-right: 15px;
+    background: linear-gradient(180deg, #FB8C2D 0%, #EF601E 100%);
+    border-radius: 90px;
+}
+
+/*FIM Header Section*/
+
+.content {
+    max-width: 800px;
+    padding: 2rem 2rem;
+}
+
+.steps {
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 1rem 1rem;
+}
+
+.headerText {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #F9822A;
+    margin: 2rem;
+}
+
+.descriptionText {
+    font-size: 2rem;
+}
+
+p>strong {
+    color: #FF9B32;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+/*FORM Section*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #A9A9A9;
+    display: block;
+}
+
+form input {
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+    margin: 1rem 0 3rem 0;
+    display: block;
+}
+
+#form-cadastro .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+#form-cadastro .form-column {
+    width: 45%;
+    min-width: 30%;
+    box-sizing: border-box;
+}
+
+#form-cadastro .form-group input {
+    margin-right: 0;
+    width: 100%;
+
+}
+
+
+::placeholder {
+    color: #c0c0c0;
+}
+
+.hidden-input {
+    display: none;
+}
+
+/*UF e Cidade*/
+/* Estilo para o select de Estado */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#estado {
+    width: 100%;
+    /* Ajuste a largura conforme necessário */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o select de Cidade */
+#cidade {
+    width: 100%;
+    /* Ajuste a largura conforme necessário */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Alinhamento à esquerda */
+select {
+    display: block;
+}
+
+/* Estilização para hover e foco */
+select:hover,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+
+/* FIM Form Section */
+#bt-cadastro {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background: linear-gradient(180deg, #FF9B32, #EE591C);
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+#continuar {
+    margin-bottom: 70px;
+}
+
+.termos-uso {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #E5E5E5;
+    padding-bottom: 40px;
+}
+
+.termos-uso>p>a {
+    color: #FF9B32;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.termos-uso>p {
+    margin: 0px;
+}
+
+/* FOOTER Section */
+#ft-secMain {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    min-height: 9rem;
+    height: auto;
+    background-color: #13181B;
+}
+
+.ft-copy {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+/* FIM Footer Section */
+
+@media(max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width: 425px) {
+    html {
+        font-size: 45%;
+    }
+
+}

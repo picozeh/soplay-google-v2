@@ -1,0 +1,377 @@
+body{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.button{
+    margin: 55px 0px; 
+}
+
+.botao-voltar img {
+    margin: 10px 0px 0px 10px;
+}
+
+.error{
+    max-width: 520px;
+}
+
+#pop-up-error {
+    left: calc(50% - 175px);
+}
+
+#pop-up-error p:nth-child(3) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #3F4244;
+}
+
+.instrucao {
+    padding-top: 64px;
+    margin: 0px auto 25px auto;
+}
+
+#endereco-invalido {
+    max-width: 400px;
+    margin: 10px auto 0px auto;
+}
+
+.double-field, .double-field-small-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-field > input, .double-field-small-left > input{
+    margin: 15px 15px 0px 0px;
+}
+
+#cvv-cartao, #bairro {
+    margin: 15px 0px 0px auto;
+}
+
+#validade-cartao, #cvv-cartao {
+    width: 50%;
+}
+
+#cidade, #rua {
+    width: 70%;
+}
+
+#uf, #numero-rua {
+    width: 30%;
+    margin: 15px 0px 0px auto;
+}
+
+.sou-estrangeiro{
+    margin-top:20px;
+    height: 30px;
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ .sou-estrangeiro input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkmark {
+    vertical-align: bottom;
+    position: absolute;
+    top: 0;
+    left: 70px; 
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #C4C4C4;
+    border-radius: 6px;
+}
+
+.sou-estrangeiro:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.sou-estrangeiro input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sou-estrangeiro input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .sou-estrangeiro .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+
+.form-subheader, .plano-card-header, .resumo-compra {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #616161;
+    margin: 20px 0px 20px 0px;
+}
+
+.form-prompt{ text-align: start; }
+
+.plano-anual > div > p { text-align: center; }
+
+.form-prompt, .texto-plano  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #616161;
+    margin: 21px 0px 21px 0px;
+}
+
+.preco-plano {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #616161;    
+}
+
+.planos {
+    display: inline-flex;
+}
+
+.plano-mensal, .plano-anual {
+    width: 185px;
+    height: 198px;
+    /* margin: 0px 5px 0px 5px; */
+    background: #F3F9FB;
+    border-radius: 10px;
+}
+
+.form{
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+.plano-anual.selecionado, .plano-mensal.selecionado {
+    background: #FFFFFF;
+    border: 3px solid #7AB0E1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(122, 176, 225, 0.65);
+    border-radius: 10px;
+}
+
+.resumo-compra {
+    justify-content: space-between;
+    display: flex;
+    margin: 25px auto 0px auto;
+    width: 381px;
+    height: 114px;
+    background: #FFFFFF;
+    border: 2px solid #D5E5F3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0px 15px 0px 15px;
+    text-align: left;
+}
+
+.resumo {
+    width: fit-content;
+}
+
+.resumo > p {
+    margin: 5px 0px 5px 0px;
+}
+
+.resumo p:nth-child(1) {
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.resumo-compra > p {
+    font-weight: 500;
+}
+
+.resumo-preco, .resumo {
+    align-self: center;
+}
+
+.resumo-preco {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #616161;
+}
+
+.double-field{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-top: 20px !important;
+}
+
+.double-field>input{
+    width: 100% !important;
+}
+
+.form > input{
+    align-self: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 30px !important;
+}
+
+.form{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+@media(max-width:650px){
+    
+.double-field{
+    width: 60% !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.double-field>input{
+    width: 60% !important;
+    height: 40px !important;
+}
+
+.form > input{
+    height: 40px !important;
+    width: 60% !important;
+}
+}
+
+@media(max-width:420px){
+    .form > input, .form select {
+        width: 100%;
+    }
+    .checkmark {
+        left: 10px;
+    }
+
+    #nao-possuo-cpf {
+        font-size: 15px;
+    }
+
+    .double-field, .double-field-small-left {
+        /* width:330px; */
+        margin: 0px auto 0px auto;
+    }
+
+    .sou-estrangeiro {
+        padding-bottom: 20px;
+    }
+
+    .instrucao {
+        width: 80%;
+    }
+
+    .resumo-compra  {
+        width: 330px;
+        margin: 20px auto 0px auto;
+    }
+
+    .form-prompt {
+        margin-left:10px;
+    }
+
+    .planos {
+        width: 95%;
+        display: block;
+        margin: 0px auto 0px auto;
+    }
+
+    .plano-anual, .plano-mensal, .plano-anual.selecionado, .plano-mensal.selecionado {
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .plano-card-header, .planos p {
+        margin: 0px;
+    }
+
+    .plano-card-header, .plano-mensal > p:nth-child(3), .plano-anual > p:nth-child(3) {
+        padding: 20px; 
+    }
+
+    .planos br {
+        display: none
+    }
+
+    #endereco-invalido {
+        max-width: 300px;
+    }
+
+    .double-field{
+        width: 80% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .double-field>input{
+        width: 80% !important;
+        height: 40px !important;
+    }
+    
+    .form > input{
+        height: 40px !important;
+        width: 80% !important;
+    }
+
+    .form{
+        width: 100% !important;
+    }
+    .plano-mensal{
+        margin-bottom: 50px;
+    }
+}
+
+/* select {
+    background: url('./../img/caret-down-solid.svg');
+    -moz-appearance: none;
+	-webkit-appearance: none;
+    background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+    background-color: #F6F6F6;
+} */

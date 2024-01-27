@@ -1,0 +1,43 @@
+body { 
+    margin: 0px;
+    background-color: #000;
+}
+
+#continuar {
+    margin-bottom: 70px;
+}
+
+.instrucao {
+    width: 400px;
+    padding-top:69px;
+    margin-bottom: 0px;
+    color: #E5E5E5;
+}
+
+.termos-uso {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #E5E5E5;
+    padding-bottom: 40px;
+}
+
+.termos-uso > p > b{
+    color: #FF9B32;
+}
+
+.termos-uso > p {
+    margin:0px;
+}
+
+@media(max-width: 420px){
+    .content {
+        padding: 0px;
+    }
+    .form {
+        width:90%;
+    }
+    .form > input, .form select {
+        width: 100%;
+    }
+}

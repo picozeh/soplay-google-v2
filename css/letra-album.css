@@ -1,0 +1,78 @@
+p, h6, a {
+  margin: 0px;
+}
+
+.musica__container { 
+  width: auto;
+  padding: 23px 29px 44px 29px;
+  text-align: left;
+  color: #3F4244;
+}
+
+.musica__container .musica__img{
+  display: block;
+  width: 280px;
+  height: 280px;
+  margin: 30px auto 39px auto;
+  border: 1px solid #0069EA;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.musica__container .musica__beforeTitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.musica__container .musica__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 11px 0px 14px 0px;
+}
+
+.musica__container .musica__subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+
+.musica__container .container__subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 28px;
+}
+
+.musica__container .musica__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2D2D2D;
+  white-space: pre-line;
+  margin-bottom: 30px;
+}
+
+.musica__container .container__links {
+  margin-top: 55px;
+}
+
+.container__links.links--album {
+  margin-top: 54px;
+} 
+
+.container__links .links__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.container__links .container__link {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+}

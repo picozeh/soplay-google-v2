@@ -1,0 +1,273 @@
+.shows__container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.show__container {
+  border-radius: 16px;
+  filter: drop-shadow(0px 15px 30px rgba(15, 69, 115, 0.15));
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.show__header {
+  position: relative;
+  min-height: 98px;
+  background: #efefef;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.show__date {
+  background: #7ba5d5;
+  padding: 13px 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.show__date-day,
+.show__date-month {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: white;
+}
+
+.show__date-day {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.show__date-month {
+  font-size: 20px;
+}
+
+.show__body {
+  background: white;
+  padding: 12px 20px;
+}
+
+.show__place-and-status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.show__place {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  color: #3f4244;
+
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.show__status {
+  background: #333;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.show__status.show__status--a-venda {
+  background: #0f4573;
+  color: white;
+}
+
+.show__status.show__status--em-breve {
+  background: transparent;
+  color: #7ba5d5;
+  border-color: #7ba5d5;
+}
+
+.show__status.show__status--esgotado {
+  background: transparent;
+  color: #acacac;
+  border-color: #acacac;
+}
+
+.show__details {
+  font-size: 16px;
+  line-height: 125%;
+  color: #797c80;
+  text-align: left;
+}
+
+.show__local {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 410px) {
+  .show__body {
+    padding: 12px;
+  }
+
+  .show__status {
+    font-size: 11px;
+  }
+
+  .show__place {
+    font-size: 16px;
+  }
+
+  .show__details {
+    font-size: 14px;
+  }
+}
+
+.show-interna__header {
+  background: #efefef;
+  margin-top: 0;
+  margin-bottom: 65px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.show-interna__header .botao-voltar {
+  transform: translateY(0);
+  top: 18px;
+}
+
+.show-interna__header-details {
+  height: 98px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.show-interna__header-date {
+  color: white;
+  background: #7ba5d5;
+  border-radius: 16px;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.show-interna__header-date-day {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.show-interna__header-date-month {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.show-interna__header-save-show {
+  cursor: pointer;
+  position: relative;
+}
+
+.show-interna__body {
+  position: relative;
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+.show-interna__body-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #3f4244;
+  margin-bottom: 12px;
+}
+
+.show-interna__body-block {
+  margin: 30px 0;
+  font-size: 19px;
+  line-height: 28px;
+  color: #797c80;
+}
+
+.show-interna__body-block p {
+  color: #797c80 !important;
+}
+
+.show-interna__body-buy-ticket-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.show-interna__body-buy-ticket-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 250, 252, 0) 0%,
+    #f7fafc 92.19%
+  );
+  height: 100px;
+}
+
+.show-interna__body-buy-ticket {
+  cursor: pointer;
+  background: #237ac4;
+  border: 1px solid #2388ff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 8px 2px #99daff;
+  border-radius: 64px;
+  padding: 16px 28px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+@media screen and (min-width: 767px) {
+  .show-interna__body-buy-ticket-container {
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    margin-top: 30px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .show-interna__body-buy-ticket-container:before {
+    display: none;
+  }
+}

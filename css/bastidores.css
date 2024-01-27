@@ -1,0 +1,110 @@
+.carousel-inner, .left.carousel-control, .right.carousel-control {
+    border-radius: 16px;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.carousel {
+    width: 450px;
+    border-radius: 15px;
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: -30px;
+    }
+}
+
+.carousel-indicators {
+    bottom: -35px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 6px;
+    background: #C4C4C4;
+    border-radius: 3px;
+}
+
+.carousel-indicators li.active {
+    background: #7AB0E1;
+    width: 15px;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0px auto;
+}
+
+#play, .fundo-texto-carroussel {
+    position:relative;
+    z-index: 1;
+}
+
+/* #carroussel-image {
+    border-radius: 15px;
+    margin: 0px auto;
+} */
+
+/* .carroussel {
+    display: block;
+    max-height: 250px;
+} */
+/* 
+.fundo-texto-carroussel {
+    top: -130px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(90px);
+    border-radius: 0px 0px 15px 15px;
+    width: 450px;
+    margin: 0px auto;
+} */
+
+/* .descricao-carroussel{
+    padding: 13px 14px 17px 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+    color: #3F4244;
+    width: 450px;
+    max-height: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+/* #play {
+    top: -170px;
+    display: block;
+    margin: 0px auto;
+    height: 45px;
+    width: 45px;
+} */
+
+#logo {
+    width: 141px;
+    height: 48px;
+}
+
+#menu {
+    width: 30px;
+    height: 30px;
+}
+
+#pequisa {
+    width: 23px;
+    height: 23px;
+}

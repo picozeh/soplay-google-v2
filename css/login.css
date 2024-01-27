@@ -1,0 +1,55 @@
+#esqueci-senha {
+    margin: 80px auto 72px auto;
+    width: 202px;
+    height: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7AB0E1;
+}
+
+.fields {
+    height: 150px;
+}
+.login > img {
+    width: 255px;
+    height: 128px;
+}
+
+.login {
+    margin: 0px auto 24px auto;
+    padding-top: 68px;
+}
+
+.botao-voltar img {
+    margin: 10px 0px 0px 10px;
+}
+
+.form {
+    width: 100%;
+    margin-top:77px;
+}
+
+.form input {
+    max-width:400px;
+    width: 100%;
+}
+
+@media(max-width: 400px) {
+    #esqueci-senha {
+        margin-top: 30px;
+    }
+    
+    .content {
+        margin: 0px 10px;
+    }
+    .form input {
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}

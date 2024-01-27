@@ -1,0 +1,120 @@
+#veja-tambem {
+    cursor: grab;
+}
+
+
+.video-container {
+    height: fit-content;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.botao-play {
+    position:absolute;
+    left: calc(50% - 22px);
+    top: 175px;
+    height: 50px;
+    width: 50px;
+}
+
+#news-body, #news-title, #news-timestamp {
+    text-align: left;
+}
+
+#news-timestamp {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #797C80;
+    margin-bottom: 0px;
+}
+
+.news-body {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: #797C80;
+    margin-bottom: 16px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.news-body .image {
+  padding: 0;
+  margin: 0;
+}
+
+.news-body .image img {
+  width: 100%;
+}
+
+#news-title{
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3F4244;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+
+
+#my-player {
+    border-radius: 16px;
+    margin: 0px;
+    width: 100%;
+}
+
+#news-image {
+    margin: 70px 12px 25px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+#veja-tambem div:nth-child(1) {
+    margin-left: 40px;
+}
+
+#veja-tambem:last-child img {
+    margin-right: 40px;
+}
+
+
+
+  .interactive-buttons {
+    display: table;
+    margin: 30px auto 0;
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    .interactive-buttons {
+      display: inline-block;
+      width: calc(100% - 8px);
+      position: fixed;
+      left: 4px;
+      bottom: 0;
+      padding: 15px;
+      text-align: center;
+      background: #fff;
+      border-radius: 30px 30px 0px 0px;
+      box-shadow: 0px -10px 30px -10px rgba(152, 190, 239, 0.6);
+      transition: all 0.15s linear;
+    }
+  }
+  .play__button {
+    display: inline-block;
+  }
+  .play__button.on-playing {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHZpZXdCb3g9IjAgMCA5MCA5MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZCkiPgo8Y2lyY2xlIGN4PSI0NSIgY3k9IjM5IiByPSIzNSIgZmlsbD0iIzk4QkVFRiIvPgo8L2c+CjxwYXRoIGQ9Ik00MS4yMjY3IDUxLjEyNUM0MS4yMjY3IDUzLjgxNzIgMzkuMDQ0IDU2IDM2LjM1MTcgNTZDMzMuNjU5NSA1NiAzMS40NzY3IDUzLjgxNzIgMzEuNDc2NyA1MS4xMjVWMjUuODc1QzMxLjQ3NjcgMjMuMTgyOCAzMy42NTk1IDIxIDM2LjM1MTcgMjFDMzkuMDQ0IDIxIDQxLjIyNjcgMjMuMTgyOCA0MS4yMjY3IDI1Ljg3NVY1MS4xMjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTkuNTIyNSA1MS4xMjVDNTkuNTIyNSA1My44MTcyIDU3LjMzOTcgNTYgNTQuNjQ3NSA1NkM1MS45NTUyIDU2IDQ5Ljc3MjUgNTMuODE3MiA0OS43NzI1IDUxLjEyNVYyNS44NzVDNDkuNzczMiAyMy4xODI4IDUxLjk1NiAyMSA1NC42NDc1IDIxQzU3LjMzOTcgMjEgNTkuNTIyNSAyMy4xODI4IDU5LjUyMjUgMjUuODc1VjUxLjEyNVoiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2QiIHg9IjAiIHk9IjAiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPgo8ZmVNb3JwaG9sb2d5IHJhZGl1cz0iNSIgb3BlcmF0b3I9ImVyb2RlIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+CjxmZU9mZnNldCBkeT0iNiIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI3LjUiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC40Nzg0MzEgMCAwIDAgMCAwLjY5MDE5NiAwIDAgMCAwIDAuODgyMzUzIDAgMCAwIDEgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvdyIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvdyIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K');
+  }

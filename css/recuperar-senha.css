@@ -1,0 +1,33 @@
+.instrucao {
+    padding-top:175px;
+}
+
+.form input{
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    max-width: 535px;
+}
+
+@media(max-width: 400px) {
+    .pop-up {
+        left: calc(50% - 155px)
+    }
+
+    .instrucao {
+        width: 100%;
+    }
+
+    .content {
+        margin: 0px 10px;
+    }
+    .form input {
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}

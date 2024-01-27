@@ -1,0 +1,135 @@
+body {
+    background-image: linear-gradient( 160deg, rgba(59,103,150,1), rgba(120,172,216,1), rgba(160,214,250,1));
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin:0px;
+}
+
+.faca-parte-clube {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 
+    0 0 70px #fff, 0 0 80px #fff;
+}
+
+#foto-roberto {
+    width: 100%;
+    margin: 0px auto;
+}
+
+#foto-roberto img {
+    align-self: center;
+    z-index:-1;
+    top: 100px;
+    width: 500px;
+    max-width: 100%;
+    position:absolute;
+    left: calc(50% - 249px);
+}
+
+.white-degrade {
+    position: absolute;
+    top: 550px;
+    background-image: linear-gradient( rgba(255,255,255,0), rgba(255,255,255,0.7));
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+}
+
+.white-degrade-longer {
+    position: absolute;
+    top: 500px;
+    background-image: linear-gradient( rgba(255,255,255,0), rgba(255,255,255,1));
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.white-degrade-mid {
+    position: absolute;
+    top: 530px;
+    background-image: linear-gradient( rgba(255,255,255,0), rgba(255,255,255,1));
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.form{
+    margin-top:290px;
+}
+
+#mobile-bg {
+    display:none;
+}
+
+#desktop-bg {
+    display: initial;
+}
+
+@media(max-width:497px){
+    #foto-roberto img {
+        text-align: center;
+        width: calc(100% - 5px);
+        left: 5px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:420px){ 
+    #desktop-bg {
+        display: none;
+    }
+
+    #mobile-bg {
+        display:initial;
+    }
+
+    #foto-roberto img {
+        text-align: center;
+        width: calc(100% - 5px);
+        left: 5px;
+        margin-top: 25px;
+    }
+
+    .form{
+        position: fixed;
+        left: calc(50% - 119px);
+        bottom: 35px;
+    }
+    .white-degrade {
+        top: 380px;
+        height: 270px;
+    }
+    
+    .white-degrade-longer {
+        top: 330px;
+        height: 412px;
+    }
+    
+    .white-degrade-mid {
+        top: 405px;
+        height: 310px;
+    }
+    
+    body {
+        background-size: 100% 650px;
+    }
+}
+
+@media(max-width:290px){ 
+    body {
+        background-size: 100% 490px;
+    }
+
+    .white-degrade {
+        top: 344px;
+    }
+    
+    .white-degrade-longer {
+        top: 280px;
+        height:230px;
+    }
+    
+    .white-degrade-mid {
+        top: 310px;
+    }
+}

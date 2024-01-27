@@ -1,0 +1,657 @@
+.agenda__container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.agenda__container .datepicker {
+  margin: 0 auto;
+  width: auto;
+  display: inline-block;
+  box-shadow: 0px 15px 30px rgba(15, 69, 115, 0.15);
+  border: 1px solid #f7fafc;
+  border-radius: 16px;
+  padding: 0px 30px;
+  font-family: Montserrat;
+  margin-top:15px
+}
+
+.agenda__container .datepicker .table-condensed {
+  border-collapse: separate;
+  border-spacing: 7px;
+}
+
+.agenda__container .datepicker .datepicker-switch {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.agenda__container .datepicker .dow {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #acacac;
+}
+
+.agenda__container .datepicker table tr td.new {
+  display: none;
+}
+
+.agenda__container .datepicker table tr td.old {
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  padding: 0;
+}
+
+.datepicker table tr td.day {
+  color: #3f4244;
+  font-weight: 600;
+}
+.datepicker table tr td.day.highlight {
+  border: 1px solid #237ac4;
+  border-radius: 50%;
+}
+
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.active.focus,
+.datepicker table tr td.active.active:focus,
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.highlighted.active.focus,
+.datepicker table tr td.active.highlighted.active:focus,
+.datepicker table tr td.active.highlighted.active:hover,
+.datepicker table tr td.active.highlighted:active.focus,
+.datepicker table tr td.active.highlighted:active:focus,
+.datepicker table tr td.active.highlighted:active:hover,
+.datepicker table tr td.active:active.focus,
+.datepicker table tr td.active:active:focus,
+.datepicker table tr td.active:active:hover {
+  border-radius: 50%;
+}
+
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.active.active.focus,
+.datepicker table tr td.active.active:focus,
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.highlighted.active.focus,
+.datepicker table tr td.active.highlighted.active:focus,
+.datepicker table tr td.active.highlighted.active:hover,
+.datepicker table tr td.active.highlighted:active.focus,
+.datepicker table tr td.active.highlighted:active:focus,
+.datepicker table tr td.active.highlighted:active:hover,
+.datepicker table tr td.active:active.focus,
+.datepicker table tr td.active:active:focus,
+.datepicker table tr td.active:active:hover,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active {
+  background-color: #7ab0e1;
+  text-shadow: none;
+  color: white;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+  width: 38px;
+  height: 38px;
+}
+
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.active.focus,
+.datepicker table tr td span.active.active:focus,
+.datepicker table tr td span.active.active:hover,
+.datepicker table tr td span.active.disabled.active.focus,
+.datepicker table tr td span.active.disabled.active:focus,
+.datepicker table tr td span.active.disabled.active:hover,
+.datepicker table tr td span.active.disabled:active.focus,
+.datepicker table tr td span.active.disabled:active:focus,
+.datepicker table tr td span.active.disabled:active:hover,
+.datepicker table tr td span.active.disabled:hover.active.focus,
+.datepicker table tr td span.active.disabled:hover.active:focus,
+.datepicker table tr td span.active.disabled:hover.active:hover,
+.datepicker table tr td span.active.disabled:hover:active.focus,
+.datepicker table tr td span.active.disabled:hover:active:focus,
+.datepicker table tr td span.active.disabled:hover:active:hover,
+.datepicker table tr td span.active:active.focus,
+.datepicker table tr td span.active:active:focus,
+.datepicker table tr td span.active:active:hover,
+.datepicker table tr td span.active:hover.active.focus,
+.datepicker table tr td span.active:hover.active:focus,
+.datepicker table tr td span.active:hover.active:hover,
+.datepicker table tr td span.active:hover:active.focus,
+.datepicker table tr td span.active:hover:active:focus,
+.datepicker table tr td span.active:hover:active:hover {
+  background-color: #7ab0e1;
+}
+
+.events-container {
+  margin: 30px 0;
+}
+
+.events-container .page-title {
+  text-align: left;
+}
+
+.button-new-event {
+  color: #fff;
+  font-weight: 700;
+  background: #7AB0E1;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  max-width: 257px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Montserrat;
+  margin: -10px auto 40px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  font-size:16px;
+}
+
+.button-new-event:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+
+  .button-new-event__container:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(247, 250, 252, 0) 0%,
+      #f7fafc 92.19%
+    );
+    height: 100px;
+  }
+}
+
+.events-list {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.events-list-item__details {
+  overflow: hidden;
+}
+
+.events-list-item {
+  background: #deeaf5;
+  border: 1px solid #f7fafc;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  margin-right:10px;
+}
+
+.events-list-item:active,
+.events-list-item:focus {
+  display: flex;
+}
+
+.events-list-item__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #0f4573;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.events-list-item__time {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #396489;
+}
+
+.events-list-item__line {
+  width: 6px;
+  height: 66px;
+  background: #7ba5d5;
+  border-radius: 16px;
+  min-width: 6px;
+  margin-right: 10px;
+}
+
+.standard-input__container {
+  margin-top: 22px;
+}
+
+.standard-input {
+  background: #f6f6f6;
+  border-radius: 16px;
+  color: #3f4244;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  width: 100%;
+  padding: 16px 22px;
+}
+
+.standard-input--with-icon {
+  position: relative;
+}
+
+.standard-input--with-icon .standard-input {
+  padding-left: 50px;
+}
+
+.standard-input__icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.standard-textarea {
+  background: #f6f6f6;
+  border-radius: 16px;
+  color: #3f4244;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  width: 100%;
+  padding: 16px 22px;
+  margin: 22px 0;
+}
+
+.event-detail__whole-day {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.whole-day__icon-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0f4573;
+}
+
+.whole-day__icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.whole-day__icon-text img {
+  margin-right: 14px;
+}
+
+.event-detail__begin-finish {
+  color: #7ab0e1;
+
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.event-detail__begin-time,
+.event-detail__finish-time {
+  opacity: 1;
+  transition: opacity 0.3s;
+  text-align: right;
+  border: none;
+  max-width: 90px;
+  cursor: pointer;
+}
+
+.event-detail__begin-finish--whole-day .event-detail__begin-time,
+.event-detail__begin-finish--whole-day .event-detail__finish-time {
+  cursor: default;
+  pointer-events: none;
+}
+
+.event-detail__begin-finish.event-detail__begin-finish--whole-day
+  .event-detail__begin-time,
+.event-detail__begin-finish.event-detail__begin-finish--whole-day
+  .event-detail__finish-time {
+  opacity: 0;
+}
+
+.event-detail__begin,
+.event-detail__finish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+.event-detail__begin {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-detail__begin-date,
+.event-detail__finish-date {
+  border: none;
+  min-width: 310px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .event-detail__begin-finish {
+    font-size: 18px;
+  }
+
+  .event-detail__begin-date,
+  .event-detail__finish-date {
+    border: none;
+    min-width: 275px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .event-detail__begin-finish {
+    font-size: 14px;
+  }
+
+  .event-detail__begin-date,
+  .event-detail__finish-date {
+    border: none;
+    min-width: 200px;
+  }
+}
+
+.event-detail__begin-date::first-letter,
+.event-detail__finish-date::first-letter {
+  text-transform: uppercase;
+}
+
+body .xdsoft_datetimepicker {
+  box-shadow: 0px 15px 30px rgb(15 69 115 / 15%);
+  border: 1px solid #f7fafc;
+  border-radius: 16px;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar th {
+  /* font-size: 18px; */
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #acacac;
+  background: none;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled:hover,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_disabled,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_disabled:hover,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled
+  div,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled:hover
+  div,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_disabled
+  div,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_disabled:hover
+  div {
+  cursor: default !important;
+  box-shadow: none !important;
+  color: #666 !important;
+  background: none !important;
+  font-weight: normal !important;
+  box-shadow: none !important;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled:hover,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_disabled:hover {
+  background: none !important;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar td,
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar th {
+  background: none;
+  border: none;
+  text-align: center;
+  box-shadow: none;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar td {
+  cursor: pointer;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_other_month {
+  opacity: 0 !important;
+  border: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar td > div {
+  padding-right: 0;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_default {
+  box-shadow: none;
+  background: none;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_default
+  dix,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_current
+  div,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_timepicker
+  .xdsoft_time_box
+  > div
+  > div.xdsoft_current
+  div {
+  background: #7ab0e1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 25px;
+  margin: 0 auto;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar td:hover {
+  background: none !important;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar td:hover div,
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_timepicker
+  .xdsoft_time_box
+  > div
+  > div:hover {
+  background: #aecfec !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 25px;
+  margin: 0 auto;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_disabled:hover
+  div {
+  background: none !important;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_datepicker
+  .xdsoft_calendar
+  td.xdsoft_today:not(.xdsoft_current) {
+  color: #7ab0e1;
+  font-weight: bold;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_label > span {
+  transition: color 0.3s;
+}
+
+body .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_label:hover > span {
+  text-decoration: none;
+  color: #999;
+}
+
+body
+  .xdsoft_datetimepicker
+  .xdsoft_timepicker
+  .xdsoft_time_box
+  > div
+  > div:hover {
+  background: #aecfec !important;
+}
+
+.buttonRemove {
+  cursor: pointer;
+}
+
+.button-remove {
+  display: flex;
+  align-items: flex-start;
+  height:100px;
+}
+.button-remove a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7AB0E1;
+  font-weight: 600;
+}
+
+.button-remove a > .icon-trash {
+  width: 30px;
+  height: 30px;
+}
+
+.dates_event, .location_events, .note {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 33px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.location_events, .note {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.location_events span {
+  padding-left: 10px;
+}
+.note {
+  border-bottom: 0px;
+}

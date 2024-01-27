@@ -1,0 +1,291 @@
+.alterar-pagamento,
+.alterar-senha {
+  display: block;
+  height: 59px;
+  margin: 15px 0px 0px;
+  font-family: Montserrat;
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 16px;
+}
+
+.dados-cartao-pagamento {
+  display: flex;
+}
+
+.button {
+  margin: 15px auto 15px;
+}
+
+.salvar-alteracao-senha,
+.salvar-alteracao-pagamento {
+  margin: 0px;
+}
+
+.texto-cartao-membro {
+  position: absolute;
+  bottom: 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-membro {
+  background-repeat: no-repeat;
+  max-height: min-content;
+  max-width: 97%;
+  border-radius: 30px;
+  position: relative;
+  margin-top:20px;
+  margin-left:4px
+}
+
+.alterar-senha,
+.alterar-pagamento {
+  justify-content: space-between;
+  display: flex;
+  vertical-align: middle;
+}
+
+.alterar-senha label,
+.alterar-pagamento label {
+  align-self: center;
+  padding: 0px 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #616161;
+}
+
+.campos-senha,
+#slider-pagamento {
+  padding: 0px;
+}
+
+.expand,
+.collapse {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.8s ease-in-out;
+  -moz-transition: max-height 0.8s ease-in-out;
+  -o-transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.8s ease-in-out;
+}
+
+.expand {
+  max-height: 500px;
+}
+
+.double-field {
+  display: flex;
+  justify-content: end;
+}
+
+.double-field > input {
+  margin: 15px 15px 0px 0px;
+}
+
+#validade-cartao,
+#cvv-cartao {
+  width: 50%;
+}
+
+#cvv-cartao {
+  margin: 15px 0px 0px auto;
+}
+
+#hint-numero-cartao {
+  padding: 0px;
+}
+
+#input-alterar-senha,
+#input-alterar-pagamento,
+#cancelar-assinatura,
+#nome-socio,
+#confirmar-cancelamento,
+#abortar-cancelamento {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7ab0e1;
+}
+
+#confirmar-cancelamento,
+#abortar-cancelamento {
+  text-transform: uppercase;
+  margin: 0px 20px;
+}
+
+.cartao-membro > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+#nome-socio {
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 5px 10px;
+    color: #0055A5;
+    float: left;
+    font-size: 14px;
+    width: 170px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: -5px;
+    text-align: -webkit-center;
+}
+
+#input-alterar-senha,
+#input-alterar-pagamento {
+  text-align: right;
+}
+
+#cancelar-assinatura {
+  padding-bottom: 60px;
+  margin: 60px 10px;
+  text-align: left;
+}
+
+.mais-informacoes-pagamento {
+  margin: 10px 10px 0px;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 141.7%;
+  color: #616161;
+}
+
+.personal-info-label,
+.user-personal-info label,
+.texto-cartao-membro label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 20px;
+  color: #797c80;
+}
+
+.texto-cartao-membro label {
+  color: #101112;
+  font-weight: 400;
+}
+
+.personal-info {
+  margin: 33px 16px;
+  text-align: left;
+}
+
+.user-personal-info {
+  margin-top: 20px;
+}
+
+.user-personal-info label:nth-child(2) {
+  color: #3f4244;
+  font-weight: 400;
+}
+
+.divider {
+  background-color: #C4C4C4;
+  display: block;
+  height: 1px;
+  margin-top: 29px;
+}
+
+.form-header {
+  margin-top: 14px;
+}
+
+#cartao-miniatura {
+  align-self: center;
+  width: 57px;
+  height: 41px;
+  left: 24px;
+  top: 1029px;
+  margin: 0px 0px 0px 10px;
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+#pop-up-assinatura-cancelada {
+  width: 370px;
+  left: calc(50% - 190px);
+}
+
+#pop-up-error {
+  left: calc(50% - 200px);
+}
+
+.lb-desktop {
+  display: inline;
+}
+
+@media (max-width: 420px) {
+  .lb-desktop {
+    display: none;
+  }
+
+  #pop-up-assinatura-cancelada {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+
+  #pop-up-cancelar-assinatura {
+    left: calc(50% - 160px);
+  }
+
+  #cartao-miniatura {
+    max-width: 50px;
+    margin: 0px 10px;
+  }
+
+  #pop-up-error {
+    left: calc(50% - 170px);
+  }
+
+  #pop-up-error > div {
+    padding: 30px 20px 30px;
+  }
+
+  .dados-cartao-pagamento > label {
+    padding: 0px 0px;
+  }
+
+  .form {
+    width: calc(100% - 20px);
+    margin: 0px 0px 0px 10px;
+  }
+
+  #email,
+  #telefone {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cartao-membro img {
+    max-width: 100%;
+  }
+
+  .texto-cartao-membro {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 359px) {
+  .texto-cartao-membro {
+    top: 150px;
+  }
+
+  .alterar-pagamento label {
+    font-size: 12px;
+  }
+}

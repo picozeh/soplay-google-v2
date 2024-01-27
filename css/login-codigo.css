@@ -1,0 +1,73 @@
+.code {
+    text-align: center;
+}
+
+.hidden{
+    display:none
+}
+
+#ajuda {
+    margin: 80px auto 72px auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #7AB0E1;
+}
+
+#ajuda, #confirmar {
+    text-align: center;
+}
+
+.code > input {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #616161;
+    background: #F6F6F6;
+    border: 0px;
+    border-radius: 16px;
+    width: 70px;
+    height: 70px;
+    text-align:center;
+    margin: auto 10px auto 10px;
+}
+
+.shield {
+    text-align: center;
+}
+
+.shield > img {
+    width: 29px;
+    height: 35px;
+    padding-top: 144px;
+}
+
+.informe-codigo > p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    max-width: 355px
+}
+
+.informe-codigo > p:nth-child(1) {
+    color: #797C80;
+}
+
+.informe-codigo > p:nth-child(2) {
+    margin-top: 40px;
+    color: #616161;
+}
+
+@media(max-width: 400px) {
+    .code > input {
+        margin: auto 5px auto 5px;
+    }
+}
