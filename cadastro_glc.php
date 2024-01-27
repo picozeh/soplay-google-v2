@@ -24,10 +24,36 @@ if (mysqli_num_rows($get_user) > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="facebook-domain-verification" content="ctmqa972qiufxo2mdq8quxbqpq6h4q" />
-    <title>SóPlay</title>
+    <title><?php echo $EmpresaNome; ?></title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '<?php echo $EmpresaGtmCode ?>');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+
+
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/google-api.css">
+
+
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,10 +77,7 @@ if (mysqli_num_rows($get_user) > 0) {
 
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./soplay_files/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./soplay_files/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./soplay_files/favicon-16x16.png">
-    <link rel="manifest" href="./soplay_files/site.webmanifest">
+    <link rel="icon" href="/client/assets/logo/favicon.ico">
     <!-- end favicon -->
 
 </head>
@@ -70,7 +93,7 @@ if (mysqli_num_rows($get_user) > 0) {
     <section id="section-Main">
         <section class="header-secMain">
             <a href="/index.html">
-                <img class="header-logo" src="./soplay_files/logo.png">
+                <img class="header-logo" src="./client/assets/logo/logo-oficial.png">
             </a>
 
 
@@ -154,7 +177,7 @@ if (mysqli_num_rows($get_user) > 0) {
         </div>
 
         <section id="ft-secMain">
-            <img class="ft-logo" src="./soplay_files/logo.png" style="height: 5rem;">
+            <img class="ft-logo" src="./client/assets/logo/logo-oficial.png" style="height: 5rem;">
             <p class="ft-copy subtitulo">
                 SóPlay - Todos os direitos reservados 2022<br>
                 <span style="font-size: 13px; color: gray;">CNPJ: 12.320.817/0001-26</span>
